@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_light">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sections_start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.016" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sections_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/stock_collection_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_outline_dark_background"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@id/sections_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/sections_start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:listitem="@layout/item_stock_collection" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipes_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/xxs_margin"
+        android:fadingEdgeLength="@dimen/default_margin"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical"
+        android:scrollbarSize="0dp"
+        android:scrollbars="vertical"
+        app:flow_verticalGap="@dimen/xs_margin"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/sections_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/sections_start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/stock_collection_spinner"
+        tools:listitem="@layout/item_collection" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/sections_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/sections_start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/stock_collection_spinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
