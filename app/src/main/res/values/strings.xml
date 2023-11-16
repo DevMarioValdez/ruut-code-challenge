@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Financial App</string>
+    <string name="home_option_account">Account</string>
+
+    <!-- LOGIN ACTIVITY -->
+    <string name="log_in">Log in</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="last_name">Lastname</string>
+    <string name="password">Password</string>
+    <string name="sign_in_act_sign_in">Sign in</string>
+    <string name="sign_in_act_create_account">Create account</string>
+    <string name="buy">Buy</string>
+    <string name="sign_in_error">Email or password wrong.</string>
+
+    <!-- SIGN UP ACTIVITY -->
+    <string name="confirm_new_password">Confirm the new password</string>
+    <string name="sign_up_greeting">Welcome to Financial</string>
+    <string name="sign_up_instructions">To create an account please fill the form.</string>
+    <string name="password_req_not_does_not_match">Password doesn\'t match</string>
+
+    <!-- COMPANY LIST FRAGMENT -->
+    <string name="formatted_home_greeting" translatable="false">Hi, %s</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account_profile">Account Profile</string>
+    <string name="logout">Log Out</string>
+
+</resources>
