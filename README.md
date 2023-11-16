@@ -24,7 +24,7 @@ The application implements a [Clean Architecture](https://blog.cleancoder.com/un
 - **Independency of any external agency:** The business rules simply don't know anything at all about the outside world.
 
 The following diagram describes in depth the concrete implementation of our architecture:
-![Architecture](https://github.com/MarioValdezDev/ruut_code_challenge/blob/main/images/architecture.png)
+![Architecture](https://github.com/DevMarioValdez/ruut-code-challenge/blob/main/images/architecture.png)
 
 ## Tech Stack
 - Minimum SDK level 24
