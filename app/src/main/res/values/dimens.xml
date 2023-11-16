@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Dimensions-->
+    <dimen name="xxxl_text_size">34sp</dimen>
+    <dimen name="xxl_text_size">24sp</dimen>
+    <dimen name="xl_text_size">20sp</dimen>
+    <dimen name="l_text_size">16sp</dimen>
+    <dimen name="default_text_size">14sp</dimen>
+    <dimen name="s_text_size">12sp</dimen>
+    <dimen name="xs_text_size">10sp</dimen>
+    <dimen name="xxs_text_size">8sp</dimen>
+    <dimen name="xxxs_text_size">6sp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_zero">0dp</dimen>
+    <dimen name="xxl_margin">64dp</dimen>
+    <dimen name="xl_margin">32dp</dimen>
+    <dimen name="l_margin">24dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="s_margin">12dp</dimen>
+    <dimen name="xs_margin">8dp</dimen>
+    <dimen name="xxs_margin">4dp</dimen>
+    <dimen name="xxxs_margin">2dp</dimen>
+
+    <!-- Icons -->
+    <dimen name="default_icon_size">24dp</dimen>
+    <dimen name="s_icon_size">16dp</dimen>
+    <dimen name="xs_icon_size">12dp</dimen>
+    <dimen name="l_icon_size">30dp</dimen>
+    <dimen name="xl_icon_size">56dp</dimen>
+    <dimen name="xxl_icon_size">70dp</dimen>
+    <dimen name="xxxl_icon_size">85dp</dimen>
+    <dimen name="xxxxl_icon_size">150dp</dimen>
+
+    <dimen name="card_view_icon_size">32dp</dimen>
+    <dimen name="card_view_card_icon_size">28dp</dimen>
+
+    <!--Buttons-->
+    <dimen name="default_button_size">70dp</dimen>
+
+    <!-- Home Activity -->
+    <dimen name="home_act_drawer_layout_width">260dp</dimen>
+    <dimen name="home_act_option_icon_size">24dp</dimen>
+    <dimen name="home_act_logo_width">100dp</dimen>
+    <dimen name="home_act_logo_height">24dp</dimen>a
+
+</resources>

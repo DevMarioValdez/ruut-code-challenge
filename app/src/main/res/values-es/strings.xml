@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RuutCodeChallenge</string>
+    <string name="home_option_account">Perfil</string>
+
+    <!-- LOGIN ACTIVITY -->
+    <string name="log_in">Iniciar Sesión</string>
+    <string name="register">Registrar</string>
+    <string name="email">Correo</string>
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="password">Contraseña</string>
+    <string name="sign_in_act_sign_in">Iniciar Sesión</string>
+    <string name="sign_in_act_create_account">Crear Cuenta</string>
+    <string name="buy">Comprar</string>
+    <string name="sign_in_error">Email o contraseña incorrecto.</string>
+
+    <!-- SIGN UP ACTIVITY -->
+    <string name="confirm_new_password">Confirma la nueva contraseña</string>
+    <string name="sign_up_greeting">Bienvenido a Financial</string>
+    <string name="sign_up_instructions">Para crear una cuenta llena el formulario.</string>
+    <string name="password_req_not_does_not_match">Las contraseñas no coinciden.</string>
+
+    <!-- COMPANY LIST FRAGMENT -->
+    <string name="formatted_home_greeting" translatable="false">Hi, %s</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account_profile">Perfil</string>
+    <string name="logout">Cerrar Sesión</string>
+</resources>

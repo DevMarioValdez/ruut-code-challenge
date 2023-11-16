@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/companyListFragment">
+
+    <fragment
+        android:id="@+id/companyListFragment"
+        android:name="mx.mariovaldez.ruutcodechallenge.companies.presentation.CompanyListFragment"
+        android:label="CompanyListFragment"
+        tool:layout="@layout/fragment_company_list">
+
+        <action
+            android:id="@+id/navigate_from_company_list_fragment_to_stock_detail_fragment"
+            app:destination="@id/stockDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stockDetailFragment"
+        android:name="mx.mariovaldez.ruutcodechallenge.stockdetail.presentation.StockDetailFragment"
+        android:label="StockDetailFragment"
+        tool:layout="@layout/fragment_stock_detail" />
+
+</navigation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_stand">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/l_margin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="@dimen/xl_margin"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="@id/end_logo_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_logo_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icv_logo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menu_options_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/logout_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_image_view"
+        tools:listitem="@layout/view_option_item" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logout_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/l_margin"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingTop="@dimen/s_margin"
+        android:paddingBottom="@dimen/s_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/close_session_logo_image_view"
+            android:layout_width="@dimen/home_act_option_icon_size"
+            android:layout_height="@dimen/home_act_option_icon_size"
+            android:layout_marginStart="@dimen/l_margin"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icv_close_session" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/xxs_margin"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/close_session_logo_image_view"
+            app:layout_constraintStart_toEndOf="@id/close_session_logo_image_view"
+            app:layout_constraintTop_toTopOf="@id/close_session_logo_image_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
