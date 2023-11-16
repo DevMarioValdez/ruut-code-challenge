@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/icv_logo" />
+        tools:src="@drawable/icv_prediction" />
 
     <TextView
         android:id="@+id/stock_collection_name_text_view"
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toStartOf="@+id/arrow_down_image_view"
         app:layout_constraintStart_toEndOf="@+id/stock_collection_image_view"
         app:layout_constraintTop_toTopOf="@+id/stock_collection_image_view"
-        tools:text="United Kingdom" />
+        tools:text="Most Active" />
 
     <ImageView
         android:id="@+id/arrow_down_image_view"
