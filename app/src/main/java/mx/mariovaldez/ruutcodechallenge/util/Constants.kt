@@ -4,5 +4,5 @@ object Constants {
     const val issuer = "financial"
     const val secret = "financialapp"
 
-    const val token = "pk_3e95ff86d6204d63a7f8c43692d6db0d"
+    const val token = "pk_ae51ef9c186d4b3398af58fa5e3f1017"
 }
